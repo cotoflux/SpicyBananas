@@ -1,0 +1,198 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Rajdhani', sans-serif;
+    overflow: hidden;
+}
+body{
+    width:100%;
+    height: 105vh;
+    background-image:url(images/Moon.jpg);
+    background-size: cover;
+}
+
+button:active, button{
+    outline: none;
+}
+
+header{
+    width:100%;
+    height: 10vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+h1::before{
+    content: open-quote;
+}
+h1::after{
+    content: close-quote;
+}
+.top-title{
+    color:#dfe6e9;
+    
+}
+main{
+    width:100%;
+    height: 80vh;
+}
+.mid{
+    width:100%;
+    height:75vh;
+    display:flex;
+}
+.mid-left{
+    width:50%;
+    height:100%;
+    margin-left:2%;
+}
+.mid-left > .slot{
+    width:90%;
+    height: 80%;
+    margin-left:5%;
+   
+}
+.mid-left > .slot >.mid-title{
+    width:90%;
+    height:20%;
+    font-size:2rem;
+    margin-right:0%;
+    margin-left:5%;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.mid-left > .slot >.mid-content{
+    width:90%;
+    height: 80%;
+    margin-right:0%;
+    margin-left:5%;
+    display:flex;
+    justify-content: space-around;
+}
+.mid-left > .slot > .mid-content >#column1,#column2,#column3{
+    width:30%;
+    height: 100%;
+    font-size: 1.8rem;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+.mid-left > .button{
+    width: 90%;
+    height: 15%;
+    margin-top:3%;
+    margin-left:5%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#but{
+    color:#dfe6e9;
+    border: none;
+    font-size:1.1rem;
+    text-decoration: none;
+    padding:2% 4% 2% 4%;
+    background-color: #ff7675;
+    border-radius:6.25rem;
+}
+#but:hover{
+    transition: 800ms;
+    color:#ff7675;
+    background-color: #dfe6e9;
+}
+#but1{
+    border: none;
+    color:#ff7675;
+    font-size:1.1rem;
+    padding:2% 4% 2% 4%;
+    background-color: #dfe6e9;
+    border-radius:6.25rem;
+}
+#but1:hover{
+    transition: 800ms;
+    color:#dfe6e9;
+    background-color: #d63031;
+}
+.mid-right{
+    width:40%;
+    height:100%;
+    margin-left:6%;
+}
+.mid-right > .result{
+    width:80%;
+    height:80%;
+    margin-top:10%;
+    margin-left:10%;
+}
+.mid-right > .result > .img2{
+    width:80%;
+    height:50%;
+    margin-left:10%;
+    background-image: url("images/death2.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.mid-right > .result > .selectedInfo{
+    width:90%;
+    height:50%;
+    margin-left:5%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mid-right > .result > .selectedInfo > .info{
+    margin:2%;
+    font-weight: bold;
+}
+footer{
+    width:100%;
+    height: 15vh;
+}
+.bottom{
+    width: 100%;
+    height: 10vh;
+}
+.setColor{
+    color:#a29bfe;
+}
+
+@media(max-width:505px){
+    #column1, #column2, #column3{
+        font-size:1rem;
+    }
+    
+}
+
+@media(max-width:453px){
+    .top-title, .mid, .bottom{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:6vh;
+    }
+    
+    h1{
+        font-size:1.7rem;
+    }
+    h2{
+        font-size:1.6rem;
+    }
+    
+    #column1, #column2, #column3{
+        font-size:0.9rem;
+    }
+    
+    #info1,#info2,#info3{
+        font-size:0.9rem;
+    }
+}
